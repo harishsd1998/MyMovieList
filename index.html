@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3c4abd2c58.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>MyMovieList App</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-film text-primary"></i> My<span class="text-primary">Movie</span>List</h1>
+      <form id="movie-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Director</label>
+          <input type="text" id="director" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">Year</label>
+          <input type="text" id="year" class="form-control">
+        </div>
+        <input type="submit" value="Add Movie" class="btn btn-primary btn-block">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="movie-list"></tbody> 
+        <!-- Insert all the movies here -->
+      </table>
+  </div>
+      <script src="app.js"></script>
+</body>
+</html>
